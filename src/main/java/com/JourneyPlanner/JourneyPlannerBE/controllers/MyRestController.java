@@ -1,6 +1,8 @@
 package com.JourneyPlanner.JourneyPlannerBE.controllers;
 
+import com.JourneyPlanner.JourneyPlannerBE.model.DAOs.IndirizziDao;
 import com.JourneyPlanner.JourneyPlannerBE.model.DAOs.MeteDao;
+import com.JourneyPlanner.JourneyPlannerBE.model.Entities.Indirizzi;
 import com.JourneyPlanner.JourneyPlannerBE.model.Entities.Mete;
 import com.JourneyPlanner.JourneyPlannerBE.utils.OrderPointsBody;
 import com.JourneyPlanner.JourneyPlannerBE.utils.StaticLib;
@@ -31,6 +33,14 @@ public class MyRestController
     public List<Mete> orderPoints(@RequestBody OrderPointsBody body)
     {
         return sl.orderPoints(body);
+    }
+
+    @CrossOrigin(origins = "*")
+    @GetMapping(value = "/getCities")
+    public List<String> getCities()
+    {
+        IndirizziDao id = new IndirizziDao();
+        return id.getCities();
     }
 
 }
