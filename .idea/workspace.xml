@@ -33,6 +33,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -86,5 +87,15 @@
       <updated>1573125116419</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="299" y="116" key="Maven.ArtifactSearchDialog" timestamp="1578674177227">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="299" y="116" key="Maven.ArtifactSearchDialog/1920.108.1536.824/0.0.1536.920/-1200.-354.1200.1880@0.0.1536.920" timestamp="1578674177227" />
+    <state x="470" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1578674002732">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="470" y="285" key="com.intellij.ide.util.TipDialog/1920.108.1536.824/0.0.1536.920/-1200.-354.1200.1880@0.0.1536.920" timestamp="1578674002732" />
   </component>
 </project>

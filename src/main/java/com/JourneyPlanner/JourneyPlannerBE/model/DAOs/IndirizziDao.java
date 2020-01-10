@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -33,7 +34,12 @@ public class IndirizziDao
             TypedQuery<Indirizzi> query =
                     em.createNamedQuery("Mete.findAll", Indirizzi.class);
             lista = query.getResultList();
-        } finally {
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.toString());
+        }
+        finally {
             em.close();
         }
         return lista;
@@ -42,7 +48,7 @@ public class IndirizziDao
     public List<String> getCities()
     {
         List<Indirizzi> tmp = findAll();
-        List<String> r = null;
+        List<String> r = new ArrayList<String>();
         for (Indirizzi i : tmp)
         {
             r.add(i.getCitta());
